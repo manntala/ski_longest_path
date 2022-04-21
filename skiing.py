@@ -44,6 +44,10 @@ final_answer =max(answer)
 
 final_steps = [] 
 for num in final_answer[1]:
+    drop_of_calculated_path = final_answer[1][0] - final_answer[1][-1]
     final_steps.append(str(num))
 
-print(f'The longest path takes {final_answer[0]} steps with {"-".join(final_steps)} as its decreasing steps.')
+print("Length of the calculate path:", len(final_steps))
+print("Drop of calculated path:", drop_of_calculated_path)
+print("Calculated path:", "-".join(final_steps))
+
